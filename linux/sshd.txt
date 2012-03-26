@@ -1,2 +1,6 @@
 sudo apt-get install openssh-server
 ps -e |grep ssh
+/etc/init.d/ssh start|restart|stop
+
+put RSA public file into .ssh directory
+cat github-rsa2.txt>.ssh/authorized_keys
