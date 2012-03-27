@@ -1,0 +1,10 @@
+sudo apt-get install gcc
+sudo apt-get install libncurses5-dev
+sudo apt-get update && sudo apt-get upgrade
+
+cd /usr/scr
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+
+sudo make
+sudo make modules
+sudo make modules_install
